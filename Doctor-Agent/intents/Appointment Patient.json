@@ -1,0 +1,123 @@
+{
+  "id": "d4061993-dbd8-4e9a-8e85-f894c08a849c",
+  "name": "Appointment Patient",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Book-Appointment",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1accdb5b-9d83-4335-956d-1bb1ee12221b",
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "4b491bf4-039c-4272-b6ac-306f56669d78",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "given-name",
+          "value": "$given-name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what is your name"
+            },
+            {
+              "lang": "en",
+              "value": "let me your name"
+            },
+            {
+              "lang": "en",
+              "value": "your good name please"
+            },
+            {
+              "lang": "en",
+              "value": "please tell me your name"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "621cc76a-011b-455e-88a8-d6678f434831",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Appointment for how many person"
+            },
+            {
+              "lang": "en",
+              "value": "How many person have note appointment"
+            },
+            {
+              "lang": "en",
+              "value": "Tell me how many person appointment"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "407fa544-0b25-4deb-8ac1-c2257eeaff7d",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please tell me your email for contact further"
+            },
+            {
+              "lang": "en",
+              "value": "let me know your email address"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "your request is forwarded!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
