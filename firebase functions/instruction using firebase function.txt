@@ -1,5 +1,5 @@
 Browser==================> Getting started with firebase function
-cmd =====================>npm install -g firebase-tools
+cmd installation =====================>npm install -g firebase-tools
                           firebase init functions
                           firebase use doctor-appointment-924ad(projectId)
                           firebase deploy --only functions    (deploy only functions) or
